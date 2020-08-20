@@ -4,25 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio Home</title>
-
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- верхній рядок з навігацією -->
-    <header>
+    <header class="header">
+      <!--LOGO компанії - посилання на головну сторінку -->
+      <a class="logo" href="./index.html">
+        <!-- <img src="./images/icons/logo.svg" alt="логотип компании" height="31" width="130" /> -->
+        <span class="logo-A">Web</span>
+        <span class="logo-B">Studio</span>
+      </a>
       <nav>
-        <!--LOGO компанії - посилання на головну сторінку -->
-        <a href="./index.html">
-          <!-- <img src="./images/icons/logo.svg" alt="логотип компании" height="31" width="130" /> -->
-          <span>Web</span>
-          <span>Studio</span>
-        </a>
+        <!-- список посилань на інші розділи сайту -->
         <ul>
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="#Contacts">Контакты</a></li>
+          <li>
+            <a href="./index.html">Студия</a>
+          </li>
+          <li>
+            <a href="./portfolio.html">Портфолио</a>
+          </li>
+          <li>
+            <a href="#Contacts">Контакты</a>
+          </li>
         </ul>
+        <!-- посилання на mail-to і tel -->
         <ul>
           <li>
             <a href="mailto:info@example.com">
@@ -31,9 +42,9 @@
             </a>
           </li>
           <li>
-            <a href="tel:+380991111111"
-              >+38 096-111-11-11
+            <a href="tel:+380991111111">
               <img src="./images/icons/smartphone.svg" alt="смартфон" />
+              <span>+38 096-111-11-11</span>
             </a>
           </li>
         </ul>
@@ -106,11 +117,11 @@
           </div>
         </section>
         <!-- наша команда -->
-        <section>
+        <section class="staff">
           <h2>Наша команда</h2>
           <ul>
+            <!-- Игорь Демьяненко Product Designer -->
             <li>
-              <!-- Игорь Демьяненко Product Designer -->
               <div>
                 <img
                   src="./images/team/PD.jpg"
@@ -120,9 +131,9 @@
                 <h3>
                   Игорь Демьяненко
                 </h3>
-                <p lang="en">
+                <h4 lang="en">
                   Product Designer
-                </p>
+                </h4>
                 <address>
                   <a href="/">
                     <img
@@ -155,8 +166,8 @@
                 </address>
               </div>
             </li>
+            <!-- Ольга Репина - Frontend Developer  -->
             <li>
-              <!-- Ольга Репина - Frontend Developer  -->
               <div>
                 <img
                   src="./images/team/FD.jpg"
@@ -166,9 +177,9 @@
                 <h3>
                   Ольга Репина
                 </h3>
-                <p lang="en">
+                <h4 lang="en">
                   Frontend Developer
-                </p>
+                </h4>
                 <address>
                   <a href="/">
                     <img
@@ -201,8 +212,8 @@
                 </address>
               </div>
             </li>
+            <!-- Николай Тарасов - Marketing -->
             <li>
-              <!-- Николай Тарасов - Marketing -->
               <div>
                 <img
                   src="./images/team/M.jpg"
@@ -212,9 +223,9 @@
                 <h3>
                   Николай Тарасов
                 </h3>
-                <p lang="en">
+                <h4 lang="en">
                   Marketing
-                </p>
+                </h4>
                 <address>
                   <a href="/">
                     <img
@@ -247,8 +258,8 @@
                 </address>
               </div>
             </li>
+            <!-- Михаил Ермаков - UI Designer-->
             <li>
-              <!-- Михаил Ермаков - UI Designer-->
               <div>
                 <img
                   src="./images/team/UID.jpg"
@@ -258,9 +269,9 @@
                 <h3>
                   Михаил Ермаков
                 </h3>
-                <p lang="en">
+                <h4 lang="en">
                   UI Designer
-                </p>
+                </h4>
                 <address>
                   <a href="/">
                     <img
@@ -296,46 +307,60 @@
           </ul>
         </section>
         <!-- постійні клієнти -->
-        <section>
+        <section class="clients">
           <h2>Постоянные клиенты</h2>
-          <div>
-            <img src="./images/icons/logo_client1.svg" alt="Logo YA & CO" />
-          </div>
-          <div>
-            <img
-              src="./images/icons/logo_client2.svg"
-              alt="Logo Company tagline here"
-            />
-          </div>
-          <div>
-            <img src="./images/icons/logo_client3.svg" alt="Logo Company" />
-          </div>
-
-          <div>
-            <img
-              src="./images/icons/logo_client4.svg"
-              alt="Logo Foster Peters"
-            />
-          </div>
-          <div>
-            <img src="./images/icons/logo_client5.svg" alt="Logo Brand" />
-          </div>
-          <div>
-            <img
-              src="./images/icons/logo_client6.svg"
-              alt="Logo Company tagline"
-            />
-          </div>
+          <ul>
+            <li>
+              <a href="./index.html">
+                <img src="./images/icons/logo_client1.svg" alt="Logo YA & CO" />
+              </a>
+            </li>
+            <li>
+              <a href="./index.html">
+                <img
+                  src="./images/icons/logo_client2.svg"
+                  alt="Logo Company tagline here"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="./index.html">
+                <img src="./images/icons/logo_client3.svg" alt="Logo Company" />
+              </a>
+            </li>
+            <li>
+              <a href="./index.html">
+                <img
+                  src="./images/icons/logo_client4.svg"
+                  alt="Logo Foster Peters"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="./index.html">
+                <img src="./images/icons/logo_client5.svg" alt="Logo Brand" />
+              </a>
+            </li>
+            <li>
+              <a href="./index.html">
+                <img
+                  src="./images/icons/logo_client6.svg"
+                  alt="Logo Company tagline"
+                />
+              </a>
+            </li>
+          </ul>
         </section>
       </article>
     </main>
     <footer class="footer">
       <!-- Контакти -->
       <address id="Contacts">
-        <a href="./index.html">
+        <!--LOGO компанії - посилання на головну сторінку -->
+        <a class="logo" href="./index.html">
           <!-- <img src="./images/icons/logo.svg" alt="логотип компании" height="31" width="130" /> -->
-          <span>Web</span>
-          <span>Studio</span>
+          <span class="logo-A">Web</span>
+          <span class="logo-W">Studio</span>
         </a>
         <ul>
           <li>
@@ -353,8 +378,8 @@
       </address>
       <!-- Приєднуйтесь у соц. мережах -->
       <div>
-        <h3>Присоединяйтесь</h3>
-        <ul>
+        <h3 class="footer-h3">Присоединяйтесь</h3>
+        <ul class="social-list">
           <li>
             <a href="/">
               <img
@@ -399,7 +424,14 @@
       </div>
       <!-- підписатись на розсилку -->
       <div>
-        <h3>Подпишитесь на рассылку</h3>
+        <h3 class="footer-h3">Подпишитесь на рассылку</h3>
+        <input type="email" name="btn2" id="2" />
+        <button type="button">
+          <span>
+            Подписаться
+          </span>
+          <img src="./images/icons/icon_send.svg" alt="Отправить" />
+        </button>
       </div>
     </footer>
   </body>

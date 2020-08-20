@@ -1,3 +1,180 @@
+/* Define variables for the colors */
+:root {
+  --active-blue: #2196f3;
+  --title-white: #ffffff;
+  --title-dark: #212121;
+  --text-grey: #757575;
+  --text-transparent: rgba(255, 255, 255, 0.6);
+
+  --header-background: #ffffff;
+  --baner-background: #c4c4c4;
+  --baner-overlay: rgba(47, 48, 58, 0.4);
+  --main-background: #ffffff;
+  --background-grey: #f5f4fa;
+  --footer-background: #2f303a;
+
+  --modal-background: rgba(0, 0, 0, 0.2);
+  --button-background: var(--active-blue);
+  --button-hover: #188ce8;
+
+  --box-shadow-1: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --staff-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --modal-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* fonts to use */
+/* for LOGO */
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: bold;
+  font-display: fallback;
+}
+/* for h1 */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Black.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 900; /*Black*/
+  font-display: fallback;
+}
+/* for h2 */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: bold; /*Bold*/
+  font-display: fallback;
+}
+/* for header nav-items */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 500; /*Medium*/
+  font-display: fallback;
+}
+/* for h4, main text, footer text */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal; /*Regular*/
+  font-display: fallback;
+}
+
+body {
+  font-family: "Roboto";
+  text-decoration: none;
+  color: var(--title-dark);
+  background-color: var(--main-background);
+}
+/* Logo decoration */
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+}
+.logo-W,
+.logo-W:visited {
+  color: var(--title-white);
+}
+.logo-B,
+.logo-B:visited {
+  color: var(--title-dark);
+}
+.logo-A,
+.logo-A:visited {
+  color: var(--active-blue);
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Header decoration */
+.header {
+  background-color: var(--header-background);
+  color: var(--title-dark);
+}
+.header li {
+  /* list without markers */
+  display: inline-block;
+  margin-right: 32px;
+  list-style-type: none;
+}
+.header a,
+.header a:visited {
+  color: var(--title-dark);
+}
+.header a:hover,
+.header a:focus,
+.header a:active {
+  color: var(--active-blue);
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* main part decoration */
+
+.staff {
+  background-color: var(--background-grey);
+}
+.staff li {
+  list-style-type: none;
+  display: inline-block;
+}
+.clients {
+}
+.clients img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients li {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  list-style-type: none;
+  display: inline-block;
+}
+.client a,
+.client a:visited {
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Footer decoration */
 .footer {
-  background-color: #888;
+  background-color: var(--footer-background);
+}
+.footer li {
+  /* list without markers */
+  list-style-type: none;
+}
+.footer a,
+.footer a:visited {
+  color: var(--text-transparent);
+}
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
+  color: var(--active-blue);
+}
+
+.footer-h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-white);
+}
+.social-list {
+}
+.social-list li {
+  display: inline-block;
+}
+.footer-button {
+  align-items: center;
+  justify-content: center;
 }
