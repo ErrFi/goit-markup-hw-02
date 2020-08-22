@@ -8,18 +8,25 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- верхній рядок з навігацією -->
     <header class="header">
-      <!--LOGO компанії - посилання на головну сторінку -->
-      <a class="logo" href="./index.html">
-        <!-- <img src="./images/icons/logo.svg" alt="логотип компании" height="31" width="130" /> -->
-        <span class="logo-A">Web</span>
-        <span class="logo-B">Studio</span>
-      </a>
+      <div class="header-logo">
+        <!--LOGO компанії - посилання на головну сторінку -->
+        <a href="./index.html">
+          <!-- <img src="./images/icons/logo.svg" alt="логотип компании" height="31" width="130" /> -->
+          <span class="logo-A">Web</span>
+          <span class="logo-B">Studio</span>
+        </a>
+      </div>
+
       <nav>
         <!-- список посилань на інші розділи сайту -->
         <ul>
@@ -51,74 +58,102 @@
       </nav>
     </header>
     <!-- Основна змістовна частина з розділами "герой", "особливості", "діяльність" та інше -->
-    <main>
+    <main class="main">
       <article>
-        <h1>Эффективные решения для вашего бизнеса</h1>
         <!-- блок-герой з головним заголовком(гаслом) та картинкою  -->
-        <div>
-          <button class="button" type="button">
-            <span>
-              Заказать услугу
-            </span>
-          </button>
+        <div class="baner">
+          <div class="baner-overlay">
+            <h1>Эффективные решения для вашего бизнеса</h1>
+            <button class="button" type="button">
+              <span>
+                Заказать услугу
+              </span>
+            </button>
+          </div>
         </div>
         <!-- блок "особливості" -->
-        <section>
-          <div>
-            <div>
-              <img src="./images/icons/antenna.svg" alt="антенна" width="70" />
-            </div>
-            <h3>Внимание к деталям</h3>
-            <p>
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </div>
-          <div>
-            <div>
-              <img src="./images/icons/clock.svg" alt="часы" width="70" />
-            </div>
-            <h3>Пунктуальность</h3>
-            <p>
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </div>
-          <div>
-            <div>
-              <img src="./images/icons/diagram.svg" alt="график" width="70" />
-            </div>
-          </div>
-          <h3>Планирование</h3>
-          <p>
-            Равным образом консультация с широким активом в значительной степени
-            обуславливает.
-          </p>
+        <section class="features">
+          <ul>
+            <!-- Внимание к деталям -->
+            <li>
+              <div class="feature-image-underlay">
+                <img
+                  src="./images/icons/antenna.svg"
+                  alt="антенна"
+                  width="70"
+                />
+              </div>
+              <h3>Внимание к деталям</h3>
+              <p>
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <!-- Пунктуальность -->
+            <li>
+              <div class="feature-image-underlay">
+                <img src="./images/icons/clock.svg" alt="часы" width="70" />
+              </div>
+              <h3>Пунктуальность</h3>
+              <p>
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <!-- Планирование -->
+            <li>
+              <div class="feature-image-underlay">
+                <img src="./images/icons/diagram.svg" alt="график" width="70" />
+              </div>
+              <h3>Планирование</h3>
+              <p>
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <!-- Современные технологии -->
+            <li>
+              <div class="feature-image-underlay">
+                <img
+                  src="./images/icons/astronaut.svg"
+                  alt="астронавт"
+                  width="70"
+                />
+              </div>
+              <h3>Современные технологии</h3>
+              <p>
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
         </section>
         <!-- блок "чим ми займаємось"  -->
-        <section>
+        <section class="direction">
           <h2>Чем мы занимаемся</h2>
-          <div>
-            <img
-              src="./images/other/desctopApps.png"
-              alt="десктопные приложения "
-              width="294"
-            />
-          </div>
-          <div>
-            <img
-              src="./images/other/mobileApps.png"
-              alt="мобильные приложения"
-              width="294"
-            />
-          </div>
-          <div>
-            <img
-              src="./images/other/designSolutions.png"
-              alt="дизайнерские решения"
-              width="294"
-            />
-          </div>
+          <ul>
+            <li>
+              <div class="direction-block1">
+                <div class="direction-capion">
+                  <h3>Десктопные приложения</h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="direction-block2">
+                <div class="direction-capion">
+                  <h3>Мобильные приложения</h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="direction-block3">
+                <div class="direction-capion">
+                  <h3>Дизайнерские решения</h3>
+                </div>
+              </div>
+            </li>
+          </ul>
         </section>
         <!-- наша команда -->
         <section class="staff">
@@ -126,7 +161,7 @@
           <ul>
             <!-- Игорь Демьяненко Product Designer -->
             <li>
-              <div>
+              <div class="staff-item">
                 <img
                   src="./images/team/PD.jpg"
                   alt="Фотография Игоря Демьяненко"
@@ -172,7 +207,7 @@
             </li>
             <!-- Ольга Репина - Frontend Developer  -->
             <li>
-              <div>
+              <div class="staff-item">
                 <img
                   src="./images/team/FD.jpg"
                   alt="Фотография Ольги Репиной"
@@ -218,7 +253,7 @@
             </li>
             <!-- Николай Тарасов - Marketing -->
             <li>
-              <div>
+              <div class="staff-item">
                 <img
                   src="./images/team/M.jpg"
                   alt="Фотография Николая Тарасова"
@@ -264,7 +299,7 @@
             </li>
             <!-- Михаил Ермаков - UI Designer-->
             <li>
-              <div>
+              <div class="staff-item">
                 <img
                   src="./images/team/UID.jpg"
                   alt="Фотография Михаила Ермакова"
@@ -358,32 +393,37 @@
       </article>
     </main>
     <footer class="footer">
-      <!-- Контакти -->
-      <address id="Contacts">
-        <!--LOGO компанії - посилання на головну сторінку -->
-        <a class="logo" href="./index.html">
-          <!-- <img src="./images/icons/logo.svg" alt="логотип компании" height="31" width="130" /> -->
-          <span class="logo-A">Web</span>
-          <span class="logo-W">Studio</span>
-        </a>
-        <ul>
-          <li>
-            <a href="https://goo.gl/maps/ZKpjapQN79g1RSdU6" target="_blank">
-              г. Киев, пр-т Леси Украинки, 26
-            </a>
-          </li>
-          <li>
-            <a href="mailto:info@example.com"> info@example.com </a>
-          </li>
-          <li>
-            <a href="tel:+380991111111"> +38-099-111-11-11 </a>
-          </li>
-        </ul>
-      </address>
+      <div class="footer-block1">
+        <div class="footer-logo">
+          <!--LOGO компанії - посилання на головну сторінку -->
+          <a class="logo" href="./index.html">
+            <!-- <img src="./images/icons/logo.svg" alt="логотип компании" height="31" width="130" /> -->
+            <span class="logo-A">Web</span>
+            <span class="logo-W">Studio</span>
+          </a>
+        </div>
+        <!-- Контакти -->
+        <address id="Contacts">
+          <ul>
+            <li>
+              <a href="https://goo.gl/maps/ZKpjapQN79g1RSdU6" target="_blank">
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@example.com"> info@example.com </a>
+            </li>
+            <li>
+              <a href="tel:+380991111111"> +38-099-111-11-11 </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+
       <!-- Приєднуйтесь у соц. мережах -->
-      <div>
+      <div class="footer-social">
         <h3 class="footer-h3">Присоединяйтесь</h3>
-        <ul class="social-list">
+        <ul>
           <li>
             <a href="/">
               <img
@@ -427,15 +467,17 @@
         </ul>
       </div>
       <!-- підписатись на розсилку -->
-      <div>
+      <div class="footer-subscribe">
         <h3 class="footer-h3">Подпишитесь на рассылку</h3>
-        <input type="email" name="btn2" id="2" />
-        <button class="button" type="button">
-          <span>
-            Подписаться
-          </span>
-          <img src="./images/icons/icon_send.svg" alt="Отправить" />
-        </button>
+        <div class="footer-subscribe-container">
+          <input class="footer-mail-input" type="email" name="btn2" id="2" />
+          <button class="button" type="button">
+            <span>
+              Подписаться
+            </span>
+            <img src="./images/icons/icon_send.svg" alt="Отправить" />
+          </button>
+        </div>
       </div>
     </footer>
   </body>
