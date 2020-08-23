@@ -345,6 +345,8 @@ body h3 {
   height: 428px;
   padding: 0px;
   text-align: center;
+
+  background-color: var(--main-background);
 }
 .staff ul {
   box-sizing: border-box;
