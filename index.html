@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -57,20 +57,20 @@
         </ul>
       </nav>
     </header>
+    <!-- блок-герой з головним заголовком(гаслом) та картинкою  -->
+    <div class="baner">
+      <div class="baner-overlay">
+        <h1>Эффективные решения для вашего бизнеса</h1>
+        <button class="button" type="button">
+          <span>
+            Заказать услугу
+          </span>
+        </button>
+      </div>
+    </div>
     <!-- Основна змістовна частина з розділами "герой", "особливості", "діяльність" та інше -->
     <main class="main">
       <article>
-        <!-- блок-герой з головним заголовком(гаслом) та картинкою  -->
-        <div class="baner">
-          <div class="baner-overlay">
-            <h1>Эффективные решения для вашего бизнеса</h1>
-            <button class="button" type="button">
-              <span>
-                Заказать услугу
-              </span>
-            </button>
-          </div>
-        </div>
         <!-- блок "особливості" -->
         <section class="features">
           <ul>
@@ -78,6 +78,7 @@
             <li>
               <div class="feature-image-underlay">
                 <img
+                  class="feature-img"
                   src="./images/icons/antenna.svg"
                   alt="антенна"
                   width="70"
@@ -132,22 +133,22 @@
         <section class="direction">
           <h2>Чем мы занимаемся</h2>
           <ul>
-            <li>
-              <div class="direction-block1">
+            <li class="direction-block1">
+              <div>
                 <div class="direction-capion">
                   <h3>Десктопные приложения</h3>
                 </div>
               </div>
             </li>
-            <li>
-              <div class="direction-block2">
+            <li class="direction-block2">
+              <div>
                 <div class="direction-capion">
                   <h3>Мобильные приложения</h3>
                 </div>
               </div>
             </li>
-            <li>
-              <div class="direction-block3">
+            <li class="direction-block3">
+              <div>
                 <div class="direction-capion">
                   <h3>Дизайнерские решения</h3>
                 </div>
@@ -165,7 +166,7 @@
                 <img
                   src="./images/team/PD.jpg"
                   alt="Фотография Игоря Демьяненко"
-                  width="260"
+                  width="270"
                 />
                 <h3>
                   Игорь Демьяненко
@@ -211,7 +212,7 @@
                 <img
                   src="./images/team/FD.jpg"
                   alt="Фотография Ольги Репиной"
-                  width="260"
+                  width="270"
                 />
                 <h3>
                   Ольга Репина
@@ -257,7 +258,7 @@
                 <img
                   src="./images/team/M.jpg"
                   alt="Фотография Николая Тарасова"
-                  width="260"
+                  width="270"
                 />
                 <h3>
                   Николай Тарасов
@@ -303,7 +304,7 @@
                 <img
                   src="./images/team/UID.jpg"
                   alt="Фотография Михаила Ермакова"
-                  width="260"
+                  width="270"
                 />
                 <h3>
                   Михаил Ермаков
@@ -350,48 +351,67 @@
           <h2>Постоянные клиенты</h2>
           <ul>
             <li>
-              <a href="./index.html">
-                <img src="./images/icons/logo_client1.svg" alt="Logo YA & CO" />
-              </a>
+              <div class="clients-item">
+                <a href="./index.html">
+                  <img
+                    src="./images/icons/logo_client1.svg"
+                    alt="Logo YA & CO"
+                  />
+                </a>
+              </div>
             </li>
             <li>
-              <a href="./index.html">
-                <img
-                  src="./images/icons/logo_client2.svg"
-                  alt="Logo Company tagline here"
-                />
-              </a>
+              <div class="clients-item">
+                <a href="./index.html">
+                  <img
+                    src="./images/icons/logo_client2.svg"
+                    alt="Logo Company tagline here"
+                  />
+                </a>
+              </div>
             </li>
             <li>
-              <a href="./index.html">
-                <img src="./images/icons/logo_client3.svg" alt="Logo Company" />
-              </a>
+              <div class="clients-item">
+                <a href="./index.html">
+                  <img
+                    src="./images/icons/logo_client3.svg"
+                    alt="Logo Company"
+                  />
+                </a>
+              </div>
             </li>
             <li>
-              <a href="./index.html">
-                <img
-                  src="./images/icons/logo_client4.svg"
-                  alt="Logo Foster Peters"
-                />
-              </a>
+              <div class="clients-item">
+                <a href="./index.html">
+                  <img
+                    src="./images/icons/logo_client4.svg"
+                    alt="Logo Foster Peters"
+                  />
+                </a>
+              </div>
             </li>
             <li>
-              <a href="./index.html">
-                <img src="./images/icons/logo_client5.svg" alt="Logo Brand" />
-              </a>
+              <div class="clients-item">
+                <a href="./index.html">
+                  <img src="./images/icons/logo_client5.svg" alt="Logo Brand" />
+                </a>
+              </div>
             </li>
             <li>
-              <a href="./index.html">
-                <img
-                  src="./images/icons/logo_client6.svg"
-                  alt="Logo Company tagline"
-                />
-              </a>
+              <div class="clients-item">
+                <a href="./index.html">
+                  <img
+                    src="./images/icons/logo_client6.svg"
+                    alt="Logo Company tagline"
+                  />
+                </a>
+              </div>
             </li>
           </ul>
         </section>
       </article>
     </main>
+    <!-- +++ Footer +++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <footer class="footer">
       <div class="footer-block1">
         <div class="footer-logo">
