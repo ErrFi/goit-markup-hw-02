@@ -1,3 +1,3 @@
 # web-studio-desktop
 Link to live page:
-https://errfi.github.io/web-studio-desktop/
+https://errfi.github.io/goit-markup-hw-02/
