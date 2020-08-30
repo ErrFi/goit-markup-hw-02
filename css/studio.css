@@ -86,13 +86,7 @@ body h3 {
 }
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Header decoration */
-.header {
-  display: flex;
-  width: 1600px;
-  height: 80px;
-  background-color: var(--header-background);
-  color: var(--title-dark);
-}
+
 .header-logo {
   box-sizing: border-box;
   width: 145px;
@@ -435,12 +429,7 @@ body h3 {
 }
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Footer decoration */
-.footer {
-  display: inline-flex;
-  width: 1600px;
-  height: 252px;
-  background-color: var(--footer-background);
-}
+
 .footer-block1 {
   box-sizing: border-box;
   width: 235px;
